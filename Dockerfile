@@ -1,8 +1,7 @@
 FROM python:slim-buster
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
-ADD https://raw.githubusercontent.com/mrismanaziz/Man-Userbot/Man-Userbot/requirements.txt requirements.txt
 RUN set -ex \
     && apt-get -qq update \
     && apt-get -qq -y install --no-install-recommends \
@@ -47,7 +46,8 @@ RUN set -ex \
     && chmod 0755 /usr/bin/chromedriver \
 
     # Install Python modules
-    && pip3 install -r requirements.txt \
+    && wget https://raw.githubusercontent.com/mrismanaziz/Man-Userbot/Man-Userbot/requirements.txt \
+    && pip3 install --no-cache-dir --use-deprecated=legacy-resolver -r requirements.txt \
     && rm requirements.txt \
 
     # Install RAR
