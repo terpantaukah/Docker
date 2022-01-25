@@ -46,7 +46,7 @@ RUN set -ex \
     && chmod 0755 /usr/bin/chromedriver \
 
     # Install Python modules
-    && wget https://raw.githubusercontent.com/mrismanaziz/Man-Userbot/Man-Userbot/requirements.txt \
+    && wget https://raw.githubusercontent.com/jokokendi/Ice-Userbot/Ice-Userbot/requirements.txt \
     && pip3 install --no-cache-dir --use-deprecated=legacy-resolver -r requirements.txt \
     && rm requirements.txt \
 
