@@ -1,7 +1,7 @@
-# Docker for Man-Userbot
-Docker for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
+# Docker for Ice-Userbot
+Docker for [Ice-Userbot](https://github.com/jokokendi/Ice-Userbot)
 
 ## Cara Menggunakan?
 ```
-docker pull mrismanaziz/man-userbot:buster
+docker pull jokokendi/ice-userbot:buster
 ```
