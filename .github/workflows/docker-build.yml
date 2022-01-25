@@ -29,4 +29,4 @@ jobs:
           function sendTG() {
           curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TELEGRAM_TO }}&parse_mode=Markdown"
           }
-          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/jokokendil/ice-userbot/tags)" &> /dev/null
+          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/u/escapeaja/ice-userbot/tags)" &> /dev/null
